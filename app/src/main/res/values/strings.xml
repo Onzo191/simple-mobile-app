@@ -1,3 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <resources>
     <string name="app_name">Simple Mobile App</string>
+
+    <!-- Auth -->
+    <string name="lbl_login">Đăng nhập</string>
+    <string name="lbl_register">Đăng ký</string>
+    <string name="lbl_register_link">Đăng kí ngay</string>
+    <string name="lbl_forgot_password">Quên mật khẩu</string>
+    <string name="lbl_skip">Bỏ qua</string>
+    <string name="lbl_username">Tên tài khoản</string>
+    <string name="lbl_email_or_phone">Email/Số điện thoại</string>
+    <string name="lbl_password">Mật khẩu</string>
+
+    <string name="msg_greeting_login">Mừng trở lại,</string>
+    <string name="msg_greeting_register">Xin chào,</string>
+    <string name="msg_continue_with_google">Tiếp tục với Google</string>
+    <string name="msg_use_email_or_phone">Dùng email hoặc số điện thoại</string>
+    <string name="msg_accept_policies">Tôi đồng ý với điều khoản</string>
+    <string name="msg_not_have_account">Chưa có tài khoản?</string>
+    <string name="msg_stay_login">Duy trì đăng nhập</string>
+    <string name="msg_to_have_better_exp">Để có trải nghiệm tốt hơn</string>
+
+    <!--  Description  -->
+    <string name="dsc_logo_papy_textbelow">Papy\'s Logo with text below</string>
+
 </resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="_320dp">320dp</dimen>
+    <dimen name="_280dp">280dp</dimen>
+    <dimen name="_256dp">256dp</dimen>
+    <dimen name="_240dp">240dp</dimen>
+    <dimen name="_100dp">100dp</dimen>
+    <dimen name="_64dp">64dp</dimen>
+    <dimen name="_48dp">48dp</dimen>
+    <dimen name="_40dp">40dp</dimen>
+    <dimen name="_32dp">32dp</dimen>
+    <dimen name="_28dp">28dp</dimen>
+    <dimen name="_24dp">24dp</dimen>
+    <dimen name="_20dp">20dp</dimen>
+    <dimen name="_16dp">16dp</dimen>
+    <dimen name="_14dp">14dp</dimen>
+    <dimen name="_12dp">12dp</dimen>
+    <dimen name="_8dp">8dp</dimen>
+    <dimen name="_4dp">4dp</dimen>
+    <dimen name="_0dp">0dp</dimen>
+
+    <!--  ratio  -->
+    <dimen name="_1gr">0.618</dimen>
+    <dimen name="_2gr">0.382</dimen>
+    <dimen name="_3gr">0.236</dimen>
+    <dimen name="_4gr">0.146</dimen>
+    <dimen name="_5gr">0.090</dimen>
+    <dimen name="_1gr_fb">0.382</dimen> <!-- 1 - 0.618 -->
+    <dimen name="_2gr_fb">0.618</dimen> <!-- 1 - 0.382 -->
+    <dimen name="_3gr_fb">0.764</dimen> <!-- 1 - 0.236 -->
+    <dimen name="_4gr_fb">0.854</dimen> <!-- 1 - 0.146 -->
+    <dimen name="_5gr_fb">0.910</dimen> <!-- 1 - 0.090 -->
+</resources>

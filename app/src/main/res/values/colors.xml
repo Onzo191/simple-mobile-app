@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!--  BnW  -->
+    <color name="black">#010101</color>
+    <color name="dark_gray">#808080</color>
+    <color name="gray">#8C8A8A</color>
+    <color name="white">#FFFFFF</color>
+    <color name="flash_white">#F6F6F6</color>
+    <color name="anti_flash_white">#F0F0F0</color>
+
+    <!--  Pink  -->
+    <color name="palevioletred">#EE5C7C</color>
+    <color name="peach">#FF6666</color>
+    <color name="tulip">#FF8989</color>
+
+    <!--  Yellow  -->
+    <color name="star">#FFC529</color>
+    <color name="peach_yellow">#FCDDB0</color>
+    <color name="corn_silk">#FFFAD7</color>
+
 </resources>
