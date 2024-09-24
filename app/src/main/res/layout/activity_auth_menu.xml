@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -15,18 +14,21 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="@dimen/_4gr" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="@dimen/_2gr" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="@dimen/_1gr" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_4"
         android:layout_width="wrap_content"
@@ -37,15 +39,15 @@
     <!--  Views  -->
     <Button
         android:id="@+id/btnSkip"
+        style="@style/btnSkip"
         android:layout_width="@dimen/_100dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/_16dp"
         android:layout_marginBottom="@dimen/_24dp"
         android:text="@string/lbl_skip"
-        app:layout_constraintBottom_toTopOf="@+id/guideline_1"
-        app:layout_constraintEnd_toEndOf="parent"
         android:textAllCaps="false"
-        style="@style/btnSkip"/>
+        app:layout_constraintBottom_toTopOf="@+id/guideline_1"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
         android:id="@+id/logoPapyTextbelow"
@@ -53,10 +55,10 @@
         android:layout_height="@dimen/_0dp"
         android:adjustViewBounds="true"
         android:contentDescription="@string/dsc_logo_papy_textbelow"
-        app:layout_constraintTop_toBottomOf="@id/guideline_1"
         app:layout_constraintBottom_toTopOf="@id/guideline_2"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_1"
         app:srcCompat="@drawable/logo_papy_textbelow" />
 
     <LinearLayout
@@ -80,42 +82,42 @@
         <TextView
             android:id="@+id/txtSubtitle"
             style="@style/txtRobotolight16_Black"
-            android:layout_marginTop="@dimen/_4dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4dp"
             android:text="@string/msg_to_have_better_exp" />
 
     </LinearLayout>
 
     <Button
         android:id="@+id/btnGoogleLogin"
+        style="@style/btnGoogleLogin"
         android:layout_width="@dimen/_320dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_32dp"
         android:layout_marginHorizontal="@dimen/_48dp"
+        android:layout_marginTop="@dimen/_32dp"
+        android:drawableStart="@drawable/circle_icon_google"
+        android:drawableEnd="@drawable/icon_arrow"
         android:paddingHorizontal="@dimen/_16dp"
         android:paddingVertical="@dimen/_4dp"
         android:text="@string/msg_continue_with_google"
-        app:layout_constraintTop_toBottomOf="@id/guideline_3"
+        android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:drawableStart="@drawable/circle_icon_google"
-        android:drawableEnd="@drawable/icon_arrow"
-        android:textAllCaps="false"
-        style="@style/btnGoogleLogin" />
+        app:layout_constraintTop_toBottomOf="@id/guideline_3" />
 
     <Button
-        android:id="@+id/btnNavLoginPage"
+        android:id="@+id/btnEmailLogin"
+        style="@style/btnNavLoginPage"
         android:layout_width="@dimen/_256dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_12dp"
         android:paddingHorizontal="@dimen/_16dp"
         android:text="@string/msg_use_email_or_phone"
+        android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnGoogleLogin"
-        android:textAllCaps="false"
-        style="@style/btnNavLoginPage"/>
+        app:layout_constraintTop_toBottomOf="@+id/btnGoogleLogin" />
 
     <LinearLayout
         android:id="@+id/bottomContainer"
@@ -128,15 +130,16 @@
 
         <TextView
             android:id="@+id/txtNotHaveAccount"
+            style="@style/txtRobotoregular16_Black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/msg_not_have_account"
-            android:textAlignment="center"
-            style="@style/txtRobotoregular16_Black" />
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/navToRegister"
+            style="@style/txtRobotobold16_Peach"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -145,8 +148,7 @@
             android:paddingHorizontal="@dimen/_8dp"
             android:paddingVertical="@dimen/_16dp"
             android:text="@string/lbl_register_link"
-            android:textAlignment="center"
-            style="@style/txtRobotobold16_Peach" />
+            android:textAlignment="center" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
