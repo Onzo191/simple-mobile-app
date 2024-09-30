@@ -33,7 +33,7 @@ public class AuthMenu extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private GoogleSignInClient mGoogleSignInClient;
 
-    private Button btnGoogleLogin;
+    private Button btnGoogleLogin, btnEmailLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +58,7 @@ public class AuthMenu extends AppCompatActivity {
 
         // Map UI components
         btnGoogleLogin = findViewById(R.id.btnGoogleLogin);
+        btnEmailLogin = findViewById(R.id.btnEmailLogin);
 
         ActivityResultLauncher<Intent> signInLauncher = registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),
@@ -85,6 +86,11 @@ public class AuthMenu extends AppCompatActivity {
         btnGoogleLogin.setOnClickListener(v -> {
             Intent signInIntent = mGoogleSignInClient.getSignInIntent();
             signInLauncher.launch(signInIntent);
+        });
+
+        btnEmailLogin.setOnClickListener(v -> {
+            Intent intent = new Intent(AuthMenu.this, Login.class);
+            startActivity(intent);
         });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
