@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -34,6 +35,7 @@ public class AuthMenu extends AppCompatActivity {
     private GoogleSignInClient mGoogleSignInClient;
 
     private Button btnGoogleLogin;
+    private TextView navToRegister;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +60,7 @@ public class AuthMenu extends AppCompatActivity {
 
         // Map UI components
         btnGoogleLogin = findViewById(R.id.btnGoogleLogin);
+        navToRegister = findViewById(R.id.navToRegister);
 
         ActivityResultLauncher<Intent> signInLauncher = registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),
@@ -74,8 +77,7 @@ public class AuthMenu extends AppCompatActivity {
                         } catch (ApiException e) {
                             System.out.println("please check vpn connection");
                         }
-                    }
-                    else if (result.getResultCode() == RESULT_CANCELED) {
+                    } else if (result.getResultCode() == RESULT_CANCELED) {
                         Toast.makeText(getApplicationContext(), "Sign-in canceled", Toast.LENGTH_SHORT).show();
                     }
                 }
@@ -85,6 +87,11 @@ public class AuthMenu extends AppCompatActivity {
         btnGoogleLogin.setOnClickListener(v -> {
             Intent signInIntent = mGoogleSignInClient.getSignInIntent();
             signInLauncher.launch(signInIntent);
+        });
+
+        navToRegister.setOnClickListener(v -> {
+            Intent intent = new Intent(AuthMenu.this, Register.class);
+            startActivity(intent);
         });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
